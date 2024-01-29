@@ -1,0 +1,10 @@
+<h2>Book List</h2>
+
+<ul>
+    <% books.forEach(function(book) { %>
+        <li><%= book.title %> by <%= book.author %>
+            <a href="/update/<%= book.id %>" hx-get="/update/<%= book.id %>" hx-target="#placeholder">Edit</a>
+            <a href="/delete/<%= book.id %>" hx-delete="/delete/<%= book.id %>" hx-target="#placeholder" hx-confirm="Are you sure?">Delete</a>
+        </li>
+    <% }); %>
+</ul>

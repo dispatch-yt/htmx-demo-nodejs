@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/htmx.org@1.6.1/dist/htmx.min.js"></script>
+    <title>Book Management</title>
+</head>
+<body>
+
+<h1>Book Management</h1>
+
+<div id="dashboard">
+    <button hx-get="/create" hx-target="#placeholder">Add Book</button>
+    <button hx-get="/read" hx-target="#placeholder">View Books</button>
+</div>
+
+<div id="placeholder">
+</div>
+
+</body>
+</html>
